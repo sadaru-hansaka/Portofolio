@@ -5,9 +5,9 @@ body{
 
 .slide_1{
     height: 100vh;
-    background-color: blanchedalmond;
     align-items: flex-start;
     display: flex;
+    background-color: #1F2833;
 }
 
 .navbar{
@@ -17,10 +17,11 @@ body{
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    position: fixed;
 }
 
 .name{
-    color: black;
+    color: #66fcf1;
     text-decoration: none;
     font-size: 20px;
     font-weight: bolder;
@@ -48,7 +49,7 @@ body{
 }
 
 .list li a {
-    color: black;
+    color: white;
     text-decoration: none;
     font-size: 20px;
     font-weight: bolder;
@@ -56,7 +57,46 @@ body{
 }
 
 .list li a:hover {
-    color: rgb(84, 31, 230);
+    color: #66fcf1;
     padding: 8px;
     border-radius: 10px;
+}
+
+.about{
+    font-size: 60px;
+    color: white;
+    font-family: "Quicksand";
+    align-items: center;
+    justify-content: center;
+}
+
+.slide_2{
+    height: 100vh;
+    padding-top: 50px;
+    background-color: #1F2833;
+}
+
+.skill{
+    font-size: 60px;
+    color: white;
+    font-family: "Quicksand";
+    align-items: center;
+    justify-content: center;
+}
+
+.slide_3{
+    height: 100vh;
+    padding-top: 50px;
+    background-color: #1F2833;
+}
+
+.slide_4{
+    height: 100vh;
+    padding-top: 50px;
+    background-color: #1F2833;
+}
+
+.list li a.active {
+    color: #66fcf1; 
+    text-decoration: underline;
 }
