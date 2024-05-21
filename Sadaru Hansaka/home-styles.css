@@ -1,15 +1,22 @@
 body{
     margin: 0;
     padding: 0;
+    display: block;
+    justify-content: center;
+    align-items: center;
 }
 
+/* home page  */
 .slide_1{
     height: 100vh;
     align-items: flex-start;
     display: flex;
-    background-color: #1F2833;
+    /* background-color: #021122; */
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(background1.jpg);
+    background-size: cover;
 }
 
+/* navigation bar container */
 .navbar{
     margin: 0px;
     display: flex;
@@ -20,6 +27,7 @@ body{
     position: fixed;
 }
 
+/* topic name styles */
 .name{
     color: #66fcf1;
     text-decoration: none;
@@ -63,11 +71,58 @@ body{
 }
 
 .about{
-    font-size: 60px;
-    color: white;
-    font-family: "Quicksand";
+    display: flex;
+    width: 50%;
     align-items: center;
     justify-content: center;
+    height: 100vh;
+}
+.about_me {
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    text-align: left;
+    color: white;
+    font-family: "Quicksand";
+    flex-direction: column;
+    margin: 100px;
+}
+.about_me h4{
+    font-size: 40px;
+    padding: 0;
+    margin: 0;
+}
+.about_me h5{
+    font-size: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+.profile-picture-area{
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.profile-picture-container {
+    height: 100vh;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;;
+    overflow: hidden;
+    width: 500px; 
+    height: 500px; 
+}
+
+
+.profile_pic{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover; /* Ensures the image covers the container without distortion */
+    border: 1px solid #66fcf1;
 }
 
 .slide_2{
@@ -87,7 +142,7 @@ body{
 .slide_3{
     height: 100vh;
     padding-top: 50px;
-    background-color: #1F2833;
+    background-color: #021122;
 }
 
 .slide_4{
