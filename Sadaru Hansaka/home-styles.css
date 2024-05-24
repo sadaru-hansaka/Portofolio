@@ -72,10 +72,10 @@ body{
 
 .about{
     display: flex;
-    width: 50%;
+    width: 60%;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 90vh;
 }
 .about_me {
     display: flex;
@@ -88,16 +88,24 @@ body{
     margin: 100px;
 }
 .about_me h4{
+    margin: 0;
+    padding: 0;
     font-size: 40px;
-    padding: 0;
-    margin: 0;
+    color: #ffffff;
+    font-family: "Michroma",sans-serif;
+    line-height: 1.2;
+    margin-bottom: 10px;
+    padding-left: 10px;
 }
-.about_me h5{
-    font-size: 30px;
-    padding: 0;
+.about_me h1{
     margin: 0;
+    padding: 0;
+    font-size: 70px;
+    line-height: 1.2;
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-family: "Michroma", sans-serif;
 }
-
 .profile-picture-area{
     display: flex;
     width: 50%;
@@ -107,13 +115,13 @@ body{
 }
 .profile-picture-container {
     height: 100vh;
-    width: 50%;
+    width: 40%;
     display: flex;
     justify-content: center;
     align-items: center;;
     overflow: hidden;
-    width: 500px; 
-    height: 500px; 
+    width: 400px; 
+    height: 400px; 
 }
 
 
