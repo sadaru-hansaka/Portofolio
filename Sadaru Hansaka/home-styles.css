@@ -195,7 +195,6 @@ body{
 .about_me-container1{
     display: flex;
     justify-content: flex-start;
-    flex-direction: column;
     align-items: center;
     margin: 30px;
     border: 2px solid #66fcf1;
@@ -290,7 +289,7 @@ body{
 .slide_2{
     height: 100vh;
     padding-top: 50px;
-    background-color: #1F2833;
+    background-color: #ffffff;
 }
 
 .skill{
