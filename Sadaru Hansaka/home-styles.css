@@ -113,7 +113,7 @@ body{
     padding-left: 10px;
 }
 
-.about_me-containe{
+.about_me-container{
     margin: 10px;
     padding-top: 10px;
 }
@@ -195,6 +195,7 @@ body{
 .about_me-container1{
     display: flex;
     justify-content: flex-start;
+    flex-direction: column;
     align-items: center;
     margin: 30px;
     border: 2px solid #66fcf1;
