@@ -41,3 +41,11 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+function navpopup(){
+    var menu=document.getElementById("list");
+    menu.classList.toggle("show")
+}
+function closeNav(){
+    var sidemenu = document.getElementById("list");
+    sidemenu.classList.remove("show")
+}
