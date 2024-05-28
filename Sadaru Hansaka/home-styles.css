@@ -15,6 +15,7 @@ body{
     align-items: center;
     width: 100%;
     position: fixed;
+    z-index: 1;
 }
 
 /* topic name styles */
@@ -184,6 +185,8 @@ body{
     overflow: hidden;
     width: 400px; 
     height: 400px; 
+    box-shadow: 0 0 19px 10px #66fcf1;
+    border-radius: 50%;
 }
 
 .profile_pic{
@@ -191,7 +194,7 @@ body{
     height: 100%;
     border-radius: 50%;
     object-fit: cover; /* Ensures the image covers the container without distortion */
-    border: 1px solid #66fcf1;
+    
 }
 
 /* --------------------------------------------- */
