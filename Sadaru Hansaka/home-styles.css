@@ -216,6 +216,7 @@ body{
     border: 2px solid #66fcf1;
     width: 75%;
     text-align: center;
+    position: relative;
 }
 .about_me-container1-image{
     display: flex;
@@ -300,6 +301,26 @@ body{
     text-decoration: none;
 }
 
+/* education time line */
+.header-container{
+    display: flex;
+    align-items: center;
+    font-family: "Michroma", sans-serif;
+    color: aliceblue;
+}
+.header-container i{
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.col .line{
+    position: absolute;
+    width: 5px; 
+    height: 200px; 
+    background-color: #11a372;
+    left: 550px; 
+    top: 170px;
+}
 
 /* --------------------------------------------- */
 .slide_2{
