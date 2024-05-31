@@ -102,6 +102,7 @@ body{
     font-family: "Quicksand";
     flex-direction: column;
     margin: 100px;
+    padding-left: 0;
 }
 .leftside-content h4{
     margin: 0;
@@ -111,7 +112,7 @@ body{
     font-family: "Michroma",sans-serif;
     line-height: 1.2;
     margin-bottom: 10px;
-    padding-left: 10px;
+    /* padding-left: 10px; */
 }
 .leftside-content h1{
     margin: 0;
@@ -128,8 +129,13 @@ body{
 }
 
 .about_me-container{
-    margin: 10px;
+    margin: 0px;
     padding-top: 10px;
+}
+
+.about_me-container i{
+    font-size: 15px;
+    padding-left: 10px;
 }
 .about_me-button{
     background-color: transparent;
@@ -155,6 +161,10 @@ body{
     color: #fff; /* Text color */
     font-size: 3cqb; /* Adjust font size if needed */
     padding-left: 10px;
+}
+.github i{
+    padding: 0;
+    margin: 0;
 }
 
 .linkdin{
@@ -217,20 +227,23 @@ body{
     width: 75%;
     text-align: center;
     position: relative;
+    padding: 30px;
 }
 .about_me-container1-image{
     display: flex;
     justify-content: center;
     align-items: left;
     align-content: left;
+    padding-right: 30px;
 }
 .about_me-container1-image img{
     width: 300px;
-    padding: 30px;
+    /* padding: 30px; */
     justify-content: left;
     align-content: left;
-    border-radius: 0% 30% 0% 30%;
-    padding-left: 60px;
+    /* border-radius: 0% 30% 0% 30%; */
+    /* padding-left: 60px; */
+    box-shadow: 0px 3px 12px 0px #ccc;
 }
 
 .about_me-description{
@@ -290,6 +303,10 @@ body{
     align-items: left;
     padding-top: 20px;
 }
+.cvdownload-button i{
+    font-size: 15px;
+    padding-left: 10px;
+}
 .cv-button{
     background-color: transparent;
     color: #66fcf1;
@@ -300,27 +317,10 @@ body{
     font-size: 20px;
     text-decoration: none;
 }
-
-/* education time line */
-.header-container{
-    display: flex;
-    align-items: center;
-    font-family: "Michroma", sans-serif;
-    color: aliceblue;
-}
-.header-container i{
-    margin-right: 10px;
-    font-size: 20px;
+.cv-button:hover{
+    color: #ffffff;
 }
 
-.col .line{
-    position: absolute;
-    width: 5px; 
-    height: 200px; 
-    background-color: #11a372;
-    left: 550px; 
-    top: 170px;
-}
 
 /* --------------------------------------------- */
 .slide_2{

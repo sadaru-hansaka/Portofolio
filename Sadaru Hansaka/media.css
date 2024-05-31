@@ -163,8 +163,8 @@
         flex-direction: column;
         align-items: center;
         /* margin: 30px; */
-        border: 2px solid #66fcf1;
-        width: 80%;
+        border: 0px solid #66fcf1;
+        width: 90%;
         text-align: center;
         margin-bottom: 10px;
     }
@@ -173,13 +173,13 @@
         justify-content: center;
         align-items: left;
         align-content: left;
+        margin-bottom: 30px;
     }
     .about_me-container1-image img{
         width: 200px;
-        padding: 30px;
         justify-content: center;
         align-content: left;
-        border-radius: 0% 30% 0% 30%;
+        box-shadow: 0px 3px 12px 0px #ccc;
     }
     
     .about_me-description{
