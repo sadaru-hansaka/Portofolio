@@ -13,31 +13,61 @@ body{
 }
 
 .container{
-    margin: 10px;
-    padding: 10px;
+    margin: 0px;
+    padding: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: auto;
+    height: 100vh;
+    width: 100%;
 }
 .left {
     flex: 1;
+    text-align: center;
+}
+.text-box1{
+    padding: 0 20px 20px 120px;
     text-align: left;
+}
+.text-box1 h1{
+    color: aliceblue;
+    font-size: 50px;
+    font-family: "Josefin Sans", sans-serif;
+}
+.text-box1 h2{
+    font-family: "Quicksand", sans-serif;
+    padding-top: 10px;
+    color: #748d92;
+    font-size: 24px;
 }
 
 .right {
     flex: 1;
     text-align: right;
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
 }
 
 .right img {
+    height: 100vh;
     max-width: 100%;
-    height: auto;
+    width: auto;
+    border-radius: 50% 0px 0px 50%;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(images/aboutme-img.jpg);
+    background-size: cover;
 }
 
 
+.container-2{
+    width: 100%;
+}
+
 /* education time line */
-/* .header-container{
+.header-container{
     display: flex;
     align-items: center;
     font-family: "Michroma", sans-serif;
@@ -55,7 +85,7 @@ body{
     height: 240px; 
     background-color: #66fcf1;
     left: 20px; 
-    top: 70px;
+    top: 830px;
 }
 
 .span{
@@ -65,7 +95,7 @@ body{
     background-color: #66fcf1;
     border: 2px solid #66fcf1;
     border-radius: 50%;
-    top: 67px;
+    top: 830px;
     left:21px;
     transform: translateX(-50%);
     transition: all 0.5s;
@@ -79,7 +109,7 @@ body{
     background-color: #66fcf1;
     border: 2px solid #66fcf1;
     border-radius: 50%;
-    top: 305px;
+    top: 1060px;
     left:21px;
     transform: translateX(-50%);
     transition: all 0.5s;
@@ -136,5 +166,5 @@ body{
     padding: 0 10px;
     margin: 10px;
     color: #ccc;
-} */
+}
 /* education end */
