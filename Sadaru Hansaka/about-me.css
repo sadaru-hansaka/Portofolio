@@ -33,12 +33,23 @@ body{
     color: aliceblue;
     font-size: 50px;
     font-family: "Josefin Sans", sans-serif;
+    animation: text 2s 1 ease alternate;
 }
+@keyframes text{
+    0%{transform: translateX(-500px);}
+    100%{transform: translateX(0);}
+}
+
 .text-box1 h2{
     font-family: "Quicksand", sans-serif;
     padding-top: 10px;
     color: #748d92;
     font-size: 24px;
+    animation: h2animation 7s 1 ease alternate;
+}
+@keyframes h2animation{
+    0%{color: transparent;}
+    100%{color: #748d92;}
 }
 
 .right {

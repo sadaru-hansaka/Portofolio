@@ -4,6 +4,7 @@
     }
     .navbar{
         background-color: transparent;
+        position: fixed;
     }
     .close-btn{
         display: block;
@@ -82,6 +83,7 @@
     .slide_1{
         flex-direction: column;
         height: 100vh;
+        width: 100%;
     }
     .leftside-content{
         padding: 10px;
@@ -148,6 +150,7 @@
 
     .aboutMe_slide{
         height: 100vh;
+        width: 100%;
         padding-top: 20px;
         background-color: #1F2833;
         display: flex;

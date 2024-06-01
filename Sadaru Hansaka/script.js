@@ -49,3 +49,21 @@ function closeNav(){
     var sidemenu = document.getElementById("list");
     sidemenu.classList.remove("show")
 }
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const text = "Computer Science Undergraduate";
+    let index = 0;
+    const speed = 150; // typing speed in milliseconds
+    const typewriterElement = document.getElementById('intro');
+
+    function type() {
+        if (index < text.length) {
+            typewriterElement.textContent += text.charAt(index);
+            index++;
+            setTimeout(type, speed);
+        }
+    }
+
+    type();
+});
