@@ -4,8 +4,13 @@ body{
     display: block;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    overflow-x: hidden;
 }
-
+.slide_1, .aboutMe_slide, .slide_2, .slide_3, .slide_4 {
+    width: 100vw; /* Ensure sections take full viewport width */
+    overflow: hidden; /* Prevent overflow */
+}
 /* navigation bar container */
 .navbar{
     margin: 0px;
@@ -114,6 +119,7 @@ body{
     margin-bottom: 10px;
     /* padding-left: 10px; */
 }
+
 #intro {
     margin: 0;
     padding: 0;
@@ -122,6 +128,7 @@ body{
     color: #ffffff;
     margin-bottom: 10px;
     font-family: "Michroma", sans-serif;
+    width: 650px;
 }
 
 
@@ -199,6 +206,7 @@ body{
     height: 400px; 
     box-shadow: 0 0 19px 10px #66fcf1;
     border-radius: 50%;
+    max-width: 100%;
 }
 
 .profile_pic{
@@ -206,6 +214,7 @@ body{
     height: 100%;
     border-radius: 50%;
     object-fit: cover; /* Ensures the image covers the container without distortion */
+    max-width: 100%;
     
 }
 
@@ -329,6 +338,7 @@ body{
     height: 100vh;
     padding-top: 50px;
     background-color: #ffffff;
+    width: 100%;
 }
 
 .skill{
@@ -337,18 +347,21 @@ body{
     font-family: "Quicksand";
     align-items: center;
     justify-content: center;
+    
 }
 
 .slide_3{
     height: 100vh;
     padding-top: 50px;
     background-color: #021122;
+    width: 100%;
 }
 
 .slide_4{
     height: 100vh;
     padding-top: 50px;
     background-color: #1F2833;
+    width : 100%;
 }
 
 .list li a.active {

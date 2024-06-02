@@ -1,11 +1,21 @@
 @media screen and (max-width:1000px){
+    body{
+        overflow-X: hidden;
+        width: 100%;
+    }
     .list{
         display: none;
     }
     .navbar{
-        background-color: transparent;
+        margin: 0px;
+        display: flex;
+        padding-left: 10px;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
         position: fixed;
-    }
+        z-index: 1;
+    } 
     .close-btn{
         display: block;
     }
@@ -59,7 +69,9 @@
         border-radius: 10px;
     }
 
-
+    .leftside-content{
+        width: 100%;
+    }
     .leftside-content h4{
         margin: 0;
         padding: 0;
@@ -71,7 +83,8 @@
         padding-left: 10px;
         padding-top: 50px;
     }
-    .leftside-content h1{
+    #intro {
+        justify-content: center;
         margin: 0;
         padding: 0;
         font-size: 40px;
@@ -79,6 +92,7 @@
         color: #ffffff;
         margin-bottom: 10px;
         font-family: "Michroma", sans-serif;
+        width: 90%;
     }
     .slide_1{
         flex-direction: column;
@@ -135,8 +149,9 @@
         justify-content: center;
         align-items: center;;
         overflow: hidden;
-        width: 300px; 
-        height: 300px; 
+        width: 280px; 
+        height: 280px; 
+        max-width: 100%;
     }
 
     .profile_pic{
@@ -166,22 +181,24 @@
         flex-direction: column;
         align-items: center;
         /* margin: 30px; */
-        border: 0px solid #66fcf1;
+        border: 0px;
         width: 90%;
         text-align: center;
         margin-bottom: 10px;
     }
     .about_me-container1-image{
+        padding: 0;
+        margin: 0;        
         display: flex;
         justify-content: center;
-        align-items: left;
-        align-content: left;
+        align-items: center;
+        align-content: center;
         margin-bottom: 30px;
     }
     .about_me-container1-image img{
-        width: 200px;
+        width: 210px;
         justify-content: center;
-        align-content: left;
+        align-content: center;
         box-shadow: 0px 3px 12px 0px #ccc;
     }
     
