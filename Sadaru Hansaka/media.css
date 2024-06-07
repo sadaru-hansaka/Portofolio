@@ -269,5 +269,15 @@
         text-decoration: none;
     }
     
+    .slide_2{
+        height: auto;
+        padding-bottom: 50px;
+    }
+    .skills-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+        position: relative;
+    }
     
 }
