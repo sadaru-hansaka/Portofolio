@@ -68,7 +68,7 @@ body{
     border-radius: 50% 0px 0px 50%;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(images/aboutme-img.jpg);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(../images/aboutme-img.jpg);
     background-size: cover;
 }
 

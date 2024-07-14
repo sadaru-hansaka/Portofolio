@@ -1,0 +1,112 @@
+.aboutMe_slide{
+    height: 100vh;
+    /* padding-top: 50px; */
+    background-color: #1F2833;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_me-container1{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 30px;
+    border: 2px solid #66fcf1;
+    width: 75%;
+    text-align: center;
+    position: relative;
+    padding: 30px;
+}
+.about_me-container1-image{
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    align-content: left;
+    padding-right: 30px;
+}
+.about_me-container1-image img{
+    width: 300px;
+    /* padding: 30px; */
+    justify-content: left;
+    align-content: left;
+    /* border-radius: 0% 30% 0% 30%; */
+    /* padding-left: 60px; */
+    box-shadow: 0px 3px 12px 0px #ccc;
+}
+
+.about_me-description{
+    display: block;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_me-name{
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: left;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+.about_me-name h1{
+    color: #fff;
+    font-size: 50px;
+    font-family: "Josefin Sans",sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.about_me-para{
+    color: silver;
+    margin: 0;
+    padding: 0;
+    padding-right: 20px;
+    font-family: "Michroma", sans-serif;
+    justify-content: flex-start;
+    text-align: justify;
+}
+.about_me-para p{
+    font-size: 17px;
+}
+
+.about_me-details{
+    font-family: "Michroma", sans-serif;
+    color: aliceblue;
+    justify-content: flex-start;
+    text-align: justify;
+    padding: 0;
+    margin: 0;
+}
+.about_me-details p{
+    padding: 5px;
+    margin: 0;
+}
+
+.cvdownload-button{
+    display: flex;
+    justify-content: flex-start;
+    align-items: left;
+    padding-top: 20px;
+}
+.cvdownload-button i{
+    font-size: 15px;
+    padding-left: 10px;
+}
+.cv-button{
+    background-color: transparent;
+    color: #66fcf1;
+    padding: 10px 20px 10px 20px;
+    font-family: "Michroma",sans-serif;
+    border: 3px solid #66fcf1;
+    border-radius: 10px;
+    font-size: 20px;
+    text-decoration: none;
+}
+.cv-button:hover{
+    color: #ffffff;
+}
