@@ -13,10 +13,10 @@
         <link rel="stylesheet" href="Styles/about-me_base.css">
         <link rel="stylesheet" href="Styles/skills.css">
         <link rel="stylesheet" href="Styles/contact.css">
+        <link rel="stylesheet" href="Styles/contact-media.css">
         <link rel="stylesheet" href="Styles/projecs.css">
         <link rel="stylesheet" href="Styles/media.css">
         
-
     <body>
         <!-- first page -->
         <div class="slide_1" id="home">
@@ -168,7 +168,50 @@
 
         <!-- fourth page -->
         <div class="contact" id="contact">
-            <h1>Contact</h1>
+            <div class="contact-container">
+                <div class="contact_form">
+                    <h1>Contact me</h1>
+                    <form action="" class="form">
+                        <input type="text" name="name" placeholder="Your Name" class="contact-input" required>
+                        <input type="email" name="email" placeholder="Your Email" class="contact-input" required>
+                        <textarea name="message" placeholder="Your Message" class="text-input" rows="8" required></textarea> 
+                        <input type="submit" value="Send" class="contact-btn"> 
+                    </form>
+                    
+                </div>
+                <div class="contact_details">
+                    <div class="contact-numbers">
+                        <h1>Contact Numbers</h1>
+                        <div class="tel">
+                            <i class="fa-solid fa-phone"></i>
+                            <p>+94 74 285 1910</p>
+                        </div>
+                        <div class="tel">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <p>+94 75 829 3426</p>
+                        </div>
+                    </div>
+                    <div class="Emails">
+                        <h1>Email</h1>
+                        <div class="email">
+                            <i class="fa-solid fa-envelope"></i>
+                            <p>hansakas305@gmail.com</p>
+                        </div>
+                        <div class="email">
+                            <i class="fa-solid fa-envelope"></i>
+                            <p>sadaru.20222067@iit.ac.lk</p>
+                        </div>
+                    </div>
+                    
+                    <div class="personal-location">
+                        <h1>Address</h1>
+                        <div class="location">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p>140/B Gedarawatta, Watareka East, Hapugala, Wackwella, Galle, Sri Lanka.</p>
+                        </div>
+                    </div>
+                    
+                </div>
         </div>
 
         <script src="Control/script.js"></script>

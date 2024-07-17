@@ -1,6 +1,150 @@
 .contact{
     height: 100vh;
-    padding-top: 50px;
     background-color: #1F2833;
     width : 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+.contact-container{
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    text-align: left;
+    width: 60%;
+    border: 2px solid #fff;
+    font-family: "Montserrat";
+    height: 500px;
+    padding: 0 0 0 25px;
+    border-radius: 20px;
+}
+
+.contact_form{
+    display: flex;
+    /* justify-content: space-around; */
+    /* align-items: center; */
+    width: 60%;
+    text-align: center;
+    flex-direction: column;
+    border-radius: 20px;
+}
+.contact_form h1{
+    display: flex;
+    color: #fff;
+    font-size: 30px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+    /* align-items: flex-start; */
+    justify-content: left;
+}
+.form{
+    display: flex;
+    justify-content: space-between;
+    align-items: left; 
+    flex-direction: column;
+    height: 100%;
+}
+
+.contact-input{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 35px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 65px 0 35px ;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    font-weight: 100;
+}
+
+.contact-input::placeholder, .text-input::placeholder{
+    color: #fff;
+    opacity: 0.6;
+}
+
+.text-input{
+    padding : 10px;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 65px 0 35px ;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+}
+
+.contact-btn{
+    display: flex;
+    justify-content: flex-start;
+    align-items: left;
+    margin: 30px 0 0 35px;
+    height: 35px;
+    width: 100px;
+    border: none;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.contact_details{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: left;
+    width: 40%;
+    text-align: center;
+    background-color: #fff;
+    flex-direction: column;
+    height: 100%;
+    padding: 0 0 0 30px;
+    border-radius: 20px;
+}
+
+.contact_details h1{
+    font-size: 30px;
+    margin: 0;
+}
+
+.contact_details p{
+    padding-left: 10px;
+    margin: 0;
+    font-weight: bold;
+    padding-top: 5px;
+}
+
+.contact-numbers,
+.Emails,
+.personal-location {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.tel,
+.email,
+.location {
+    display: flex;
+    flex-direction: row;
+    margin-left: 55px;
+    align-items: center;
+}
+
+/* .contact-numbers h1,
+.Emails h1,
+.personal-location h1 {
+    margin-left: 10px;
+} */
