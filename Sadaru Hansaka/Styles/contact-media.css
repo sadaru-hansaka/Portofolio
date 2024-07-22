@@ -1,10 +1,10 @@
-@media screen and (max-width:1000px){
+@media screen and (max-width:1250px){
     .contact-container{
         width: 90%;
     }
 }
 
-@media screen and (max-width:770px){
+@media screen and (max-width:900px){
     .contact{
         height: 100vh;
         width: 100%;
