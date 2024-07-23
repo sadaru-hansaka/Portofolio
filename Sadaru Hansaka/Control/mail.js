@@ -1,4 +1,4 @@
-import { getPW } from "./keys";
+import {key} from './key.js';
 
 const form = document.querySelector('form');
 const name = document.getElementById('name');
@@ -14,7 +14,7 @@ function sendEmail() {
     Email.send({
         Host : "smtp.elasticemail.com",
         Username : "hansakas305@gmail.com",
-        Password : getPW(),
+        Password : key,
         To : 'hansakas305@gmail.com',
         From : "hansakas305@gmail.com",
         Subject : subject.value,
