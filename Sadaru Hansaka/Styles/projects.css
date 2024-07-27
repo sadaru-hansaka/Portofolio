@@ -1,0 +1,47 @@
+.projects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding-top: 50px;
+    background-color: #1F2833;
+    width: 100%;
+    padding-bottom: 10px;
+    flex-direction: column;
+}
+
+
+.projects h1{
+    color: #fff;
+    font-size: 50px;
+    font-family: "Josefin Sans",sans-serif;
+}
+.portfolio-container{
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px 30px;
+    margin: 0 auto;
+    height: auto; 
+    width: 90%;
+    position: relative;
+    margin-top: 40px; 
+    margin-bottom: 50px;
+}
+
+.portfolio-card{
+    width: 400px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+    border:  2px solid yellow;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;  
+}
