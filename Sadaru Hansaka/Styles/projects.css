@@ -6,7 +6,6 @@
     padding-top: 50px;
     background-color: #1F2833;
     width: 100%;
-    padding-bottom: 10px;
     flex-direction: column;
 }
 
@@ -16,20 +15,22 @@
     font-size: 50px;
     font-family: "Josefin Sans",sans-serif;
 }
-.portfolio-container{
-    align-items: center;
+
+
+.portfolio-container1{
+    display: flex;
     justify-content: center;
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 50px 30px;
-    margin: 0 auto;
-    height: auto; 
-    width: 90%;
-    position: relative;
-    margin-top: 40px; 
-    margin-bottom: 50px;
+    align-items: center;
+    height: auto;
+    width: 100%;
 }
+
+.line1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
 
 .portfolio-card{
     width: 400px;
