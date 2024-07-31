@@ -1,0 +1,27 @@
+@media screen and (max-width:1290px){
+    .line1{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 130px;
+    }
+
+    .portfolio-card{
+        width: 350px;
+        height: 500px;
+    }
+
+}
+
+
+@media screen and (max-width:830px){
+    .line1{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .portfolio-card{
+        width: 350px;
+        height: 500px;
+    }
+
+}

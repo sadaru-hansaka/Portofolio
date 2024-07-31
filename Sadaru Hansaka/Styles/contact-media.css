@@ -20,7 +20,7 @@
     .contact-container{
         display: flex;
         flex-direction: column;
-        width: 100%;
+        width: 90%;
         height: auto;
         padding: 0;
         margin: 10px;
