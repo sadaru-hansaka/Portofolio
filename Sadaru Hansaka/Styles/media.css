@@ -1,4 +1,17 @@
-@media screen and (max-width:1000px){
+@media screen and (max-width:1300px){
+    .profile-picture-container{
+        width: 450px;
+        height: 450px;
+    }
+
+    .profile-picture-area{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+}
+@media screen and (max-width:1030px){
     body{
         overflow-X: hidden;
         width: 100%;
