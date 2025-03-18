@@ -12,6 +12,9 @@ body{
     align-items: center;
 }
 
+/* #1F2833 */
+/* #353a41 */
+
 .container{
     margin: 0px;
     padding: 0px;
@@ -75,6 +78,9 @@ body{
 
 .container-2{
     width: 100%;
+    padding: 20px;
+    background-color: #353a41;
+    height: auto;
 }
 
 /* education time line */
@@ -83,49 +89,17 @@ body{
     align-items: center;
     font-family: "Michroma", sans-serif;
     color: aliceblue;
-    padding: 0 20px 20px 20px;
+    padding: 20px 20px 20px 20px;
 }
 .header-container i{
     margin-right: 10px;
     font-size: 20px;
 }
 
-.col .line{
-    position: absolute;
-    width: 2px; 
-    height: 240px; 
-    background-color: #66fcf1;
-    left: 20px; 
-    top: 830px;
+.edu{
+    font-size: 40px;
 }
 
-.span{
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    background-color: #66fcf1;
-    border: 2px solid #66fcf1;
-    border-radius: 50%;
-    top: 830px;
-    left:21px;
-    transform: translateX(-50%);
-    transition: all 0.5s;
-
-}
-
-.span2{
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    background-color: #66fcf1;
-    border: 2px solid #66fcf1;
-    border-radius: 50%;
-    top: 1060px;
-    left:21px;
-    transform: translateX(-50%);
-    transition: all 0.5s;
-
-}
 
 .row{
     display: grid;
@@ -133,49 +107,155 @@ body{
     grid-column-gap: 10px;
 }
 
+.education-item {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 20px;
+    padding:0px 0px 0px 50px; 
+}
 
-.col .content .box{
-    position: relative;
-    padding: 0px;
-    width: 400px;
-    border: 1px solid #fff;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: all 0.4s;
+.icon {
+    font-size: 24px;
+    margin-right: 10px;
+    padding-right: 20px;
+}
+
+.education-content h3 {
+    font-size: 22px;
+    margin: 0;
+    color: #ffff;
+    font-family: "Quicksand", sans-serif;
+}
+
+.education-content h4 {
+    font-family: "Quicksand", sans-serif;
+    font-size: 18px;
+    margin: 5px 0;
+    color: #868585;
+}
+
+.education-content p {
+    margin: 5px 0;
+    color: #ccc;
+}
+
+
+
+/* core values */
+.core-values{
+    margin-top: 40px;
+}
+
+.coreValues{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Michroma", sans-serif;
+    color: aliceblue;
+    padding: 20px 20px 20px 20px;
+    font-size: 40px;
     margin-bottom: 20px;
-    left: 40px;
-
-}
-.col .content .box:hover{
-    box-shadow: 0 3px 12px 0px #ccc;
-    border: 1px solid transparent;
 }
 
-.box h4{
-    position: relative;
-    color: #11a372;
-    text-align: left;
-    padding-left: 10px;
+.values-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
-.box h3{
-    font-size: 19px;
-    padding:0px 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #444;
-    text-align: left;
-    margin: 10px;
-    color: #ccc;
+.value-card {
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+    backdrop-filter: blur(10px); /* Blurred glass effect */
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 250px;
+    transition: transform 0.3s ease-in-out;
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.box p{
-    line-height: 1.2;
-    color: #666;
-    font-size: 17px;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: left;
-    padding: 0 10px;
-    margin: 10px;
-    color: #ccc;
+.value-card:hover {
+    transform: scale(1.05);
 }
-/* education end */
+
+.value-card img {
+    width: 40px;
+    margin-bottom: 10px;
+}
+
+.value-card h3 {
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.value-card p {
+    font-family: "Quicksand", sans-serif;
+    font-size: 0.9rem;
+    color: #fff;
+}
+
+/* hobies and intrests */
+.hobbies{
+    margin-top: 40px;
+}
+.hobby-topic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Michroma", sans-serif;
+    color: aliceblue;
+    padding: 20px 20px 20px 20px;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.hobbies-container {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    flex-wrap: wrap;
+}
+
+.hobby1{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    color: aliceblue;
+    font-family: "Michroma", sans-serif;
+
+}
+
+.hobby {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: white;
+    padding: 15px;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+.hobby i {
+    font-size: 30px;
+    color: #007bff;
+}
+
+.hobby p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+.hobby:hover {
+    transform: scale(1.1);
+}
