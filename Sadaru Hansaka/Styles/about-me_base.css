@@ -62,20 +62,21 @@
 }
 
 .about_me-para{
-    color: silver;
+    color: #748d92;
     margin: 0;
     padding: 0;
     padding-right: 20px;
-    font-family: "Michroma", sans-serif;
+    font-family: "Quicksand", sans-serif;
     justify-content: flex-start;
     text-align: justify;
 }
 .about_me-para p{
     font-size: 17px;
+    font-family: "Quicksand", sans-serif;
 }
 
 .about_me-details{
-    font-family: "Michroma", sans-serif;
+    font-family: "Quicksand", sans-serif;
     color: aliceblue;
     justify-content: flex-start;
     text-align: justify;

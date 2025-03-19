@@ -29,7 +29,7 @@ body{
     text-align: center;
 }
 .text-box1{
-    padding: 0 20px 20px 120px;
+    padding: 0 20px 20px 50px;
     text-align: left;
 }
 .text-box1 h1{
@@ -258,4 +258,23 @@ body{
 
 .hobby:hover {
     transform: scale(1.1);
+}
+
+/* back */
+.back {
+    position: absolute; 
+    top: 30px; 
+    left: 50px; 
+    z-index: 10; 
+}
+
+.back a {
+    color: #ffffff; 
+    font-size: 24px;
+    text-decoration: none; 
+    transition: color 0.3s ease; 
+}
+
+.back a:hover {
+    color: aliceblue; 
 }

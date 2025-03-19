@@ -1,27 +1,48 @@
-@media screen and (max-width:1290px){
-    .line1{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        column-gap: 130px;
+@media (max-width: 768px) {
+    .project-title {
+        font-size: 30px; /* Reduce title size for mobile */
+        padding: 10px;
     }
 
-    .portfolio-card{
-        width: 350px;
-        height: 500px;
+    .projects-container {
+        gap: 15px; /* Reduce gap between cards on mobile */
+        padding: 0 10px; /* Reduce padding on mobile */
     }
 
+    .project-card {
+        flex: 0 0 100%; /* Full width on mobile for single-column layout */
+        max-width: 90%; /* Ensure cards take full width */
+    }
+
+    .project-card img {
+        height: 150px; /* Reduce image height for mobile */
+    }
+
+    .project-card h3 {
+        font-size: 1rem; /* Reduce heading size */
+    }
+
+    .project-card p {
+        font-size: 0.8rem; /* Reduce paragraph size */
+    }
+
+    .tech-stack {
+        font-size: 0.7rem; /* Reduce tech stack text size */
+        padding: 5px; /* Reduce padding */
+    }
 }
 
-
-@media screen and (max-width:830px){
-    .line1{
-        display: grid;
-        grid-template-columns: 1fr;
+/* Optional: Extra small screens (e.g., max-width: 480px) */
+@media (max-width: 480px) {
+    .projects {
+        padding-top: 30px; /* Reduce top padding */
     }
 
-    .portfolio-card{
-        width: 350px;
-        height: 500px;
+    .project-title {
+        font-size: 25px; /* Further reduce title size */
     }
 
+    .project-card img {
+        height: 120px; /* Further reduce image height */
+    }
 }

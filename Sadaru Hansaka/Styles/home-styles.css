@@ -22,6 +22,9 @@ body{
     width: 100%;
     position: fixed;
     z-index: 1;
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+    backdrop-filter: blur(10px); /* Blurred glass effect */
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
 }
 
 /* topic name styles */
@@ -59,7 +62,7 @@ body{
 }
 
 .list li a {
-    color: white;
+    color: aliceblue;
     text-decoration: none;
     font-size: 20px;
     font-weight: bolder;
@@ -104,7 +107,7 @@ body{
     align-items: left;
     justify-content: center;
     text-align: left;
-    color: white;
+    color: aliceblue;
     font-family: "Quicksand";
     flex-direction: column;
     margin: 100px;
@@ -114,8 +117,8 @@ body{
     margin: 0;
     padding: 0;
     font-size: 40px;
-    color: #ffffff;
-    font-family: "Michroma",sans-serif;
+    color: aliceblue;
+    font-family: "Josefin Sans", sans-serif;
     line-height: 1.2;
     margin-bottom: 10px;
     /* padding-left: 10px; */
@@ -126,9 +129,9 @@ body{
     padding: 0;
     font-size: 70px;
     line-height: 1.2;
-    color: #ffffff;
+    color: aliceblue;
     margin-bottom: 10px;
-    font-family: "Michroma", sans-serif;
+    font-family: "Josefin Sans", sans-serif;
     width: 650px;
 }
 
@@ -150,7 +153,7 @@ body{
     background-color: transparent;
     color: #66fcf1;
     padding: 10px 20px 10px 20px;
-    font-family: "Michroma",sans-serif;
+    font-family: "Quicksand", sans-serif;
     border: 3px solid #66fcf1;
     border-radius: 10px;
     font-size: 20px;
@@ -168,9 +171,11 @@ body{
 }
 .github p {
     margin: 0; 
-    color: #fff; /* Text color */
+    color: aliceblue; /* Text color */
     font-size: 3cqb; /* Adjust font size if needed */
     padding-left: 10px;
+    font-family: "Quicksand", sans-serif;
+
 }
 .github i{
     padding: 0;
@@ -182,8 +187,9 @@ body{
     display: flex;
 }
 .linkdin p {
+    font-family: "Quicksand", sans-serif;
     margin: 0; 
-    color: #fff; /* Text color */
+    color: aliceblue; /* Text color */
     font-size: 3cqb; /* Adjust font size if needed */
     padding-left: 10px;
 }
