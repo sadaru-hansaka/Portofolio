@@ -148,6 +148,21 @@
     font-family: "Quicksand", sans-serif;
 }
 
+/* Add this to your CSS file */
+.form-error-message a:hover {
+    color: #cc0000 !important;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    20%, 60% { transform: translateX(-5px); }
+    40%, 80% { transform: translateX(5px); }
+}
+
+.form-error {
+    animation: shake 0.5s ease-in-out;
+}
+
 
 /* Footer */
 .footer {
@@ -256,7 +271,10 @@
 }
 
 /* Media Query for Mobile Devices (max-width: 768px) */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
+    .footer{
+        width: 100%;
+    }
     .footer-container {
         flex-direction: column;
         text-align: center;
