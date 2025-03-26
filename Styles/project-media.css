@@ -1,48 +1,79 @@
 @media (max-width: 768px) {
+    .projects {
+        padding: 30px 15px;
+    }
+    
     .project-title {
-        font-size: 30px; /* Reduce title size for mobile */
+        font-size: 30px;
         padding: 10px;
+        margin-bottom: 15px;
     }
-
+    
     .projects-container {
-        gap: 15px; /* Reduce gap between cards on mobile */
-        padding: 0 10px; /* Reduce padding on mobile */
+        gap: 15px;
+        padding: 0 10px;
     }
-
+    
     .project-card {
-        flex: 0 0 100%; /* Full width on mobile for single-column layout */
-        max-width: 90%; /* Ensure cards take full width */
+        width: 100%; /* Full width on smaller screens */
+        max-width: 400px;
     }
-
+    
     .project-card img {
-        height: 150px; /* Reduce image height for mobile */
+        height: 180px;
     }
-
+    
     .project-card h3 {
-        font-size: 1rem; /* Reduce heading size */
+        font-size: 1.1rem;
     }
-
+    
     .project-card p {
-        font-size: 0.8rem; /* Reduce paragraph size */
+        font-size: 0.85rem;
     }
-
+    
     .tech-stack {
-        font-size: 0.7rem; /* Reduce tech stack text size */
-        padding: 5px; /* Reduce padding */
+        font-size: 0.75rem;
     }
 }
 
-/* Optional: Extra small screens (e.g., max-width: 480px) */
+/* Extra small screens (phones) */
 @media (max-width: 480px) {
     .projects {
-        padding-top: 30px; /* Reduce top padding */
+        padding: 25px 10px;
     }
-
+    
     .project-title {
-        font-size: 25px; /* Further reduce title size */
+        font-size: 25px;
+    }
+    
+    .projects-container {
+        width: 95%;
+        gap: 12px;
     }
 
+    .project-card{
+        width: 350px;
+        height: 325px;
+        margin-bottom: 20px;
+    }
+    
     .project-card img {
-        height: 120px; /* Further reduce image height */
+        height: 200px;
+        width: 350;
+    }
+    
+    .project-card h3 {
+        font-size: 1rem;
+        margin: 8px;
+    }
+    
+    .project-card p {
+        font-size: 0.8rem;
+        margin: 0 8px 8px;
+    }
+    
+    .tech-stack {
+        padding: 8px;
+        font-size: 0.7rem;
     }
 }

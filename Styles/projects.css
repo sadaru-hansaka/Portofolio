@@ -7,6 +7,7 @@
     background-color: #1F2833;
     width: 100%;
     flex-direction: column;
+    box-sizing: border-box;
 }
 
 

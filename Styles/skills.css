@@ -83,3 +83,13 @@
     padding: 0;
     margin: 0;
 }
+
+@media (max-width : 480px) {
+    .skill-card{
+        width: 90%;
+    }
+
+    .sk-container{
+        width: 90%;
+    }
+}
