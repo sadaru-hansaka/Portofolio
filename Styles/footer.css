@@ -106,13 +106,29 @@
 
 /* Media Query for Mobile Devices (max-width: 768px) */
 @media (max-width: 768px) {
-    .footer-container {
+
+    .footer{
+        display: flex;
+        width: 100%;
+        align-items: center;
         flex-direction: column;
         text-align: center;
     }
+    .footer-container {
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
 
-    .footer-section {
-        margin: 20px 0;
+    .footer-section1 {
+        width: 100%;
+        text-align: center;
+    }
+    .footer-section2 {
+        width: 100%;
+        text-align: center;
+        padding: 0;
     }
 
     .social-links {

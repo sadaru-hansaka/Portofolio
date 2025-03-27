@@ -105,7 +105,7 @@
         color: #ffffff;
         margin-bottom: 10px;
         font-family: "Michroma", sans-serif;
-        width: 90%;
+        width: 100%;
     }
     .slide_1{
         flex-direction: column;
@@ -162,8 +162,8 @@
         justify-content: center;
         align-items: center;;
         overflow: hidden;
-        width: 280px; 
-        height: 280px; 
+        width: 320px; 
+        height: 320px; 
         max-width: 100%;
     }
 
