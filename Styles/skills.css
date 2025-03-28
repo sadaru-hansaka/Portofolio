@@ -92,4 +92,8 @@
     .sk-container{
         width: 90%;
     }
+
+    .skills-container h1{
+        font-size: 30px;
+    }
 }
