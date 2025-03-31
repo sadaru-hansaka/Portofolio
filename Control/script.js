@@ -51,19 +51,38 @@ function closeNav(){
 }
 
 
-// document.addEventListener('DOMContentLoaded', () => {
-//     const text = "Computer Science Undergraduate.";
-//     let index = 0;
-//     const speed = 150; // typing speed in milliseconds
-//     const typewriterElement = document.getElementById('intro');
+const texts = [
+    "Computer Science Undergraduate",
+    "Mobile Application Developer",
+    "Frontend Developer"
+];
 
-//     function type() {
-//         if (index < text.length) {
-//             typewriterElement.textContent += text.charAt(index);
-//             index++;
-//             setTimeout(type, speed);
-//         }
-//     }
+let textIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+const speed = 100;
+const delayBetweenTexts = 1500; // Pause before switching text
 
-//     type();
-// });
+function typeWriter() {
+    const intro = document.getElementById("intro");
+    const currentText = texts[textIndex];
+
+    if (isDeleting) {
+        intro.innerHTML = currentText.substring(0, charIndex--);
+    } else {
+        intro.innerHTML = currentText.substring(0, charIndex++);
+    }
+
+    if (!isDeleting && charIndex === currentText.length + 1) {
+        setTimeout(() => (isDeleting = true), delayBetweenTexts);
+    } else if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+        textIndex = (textIndex + 1) % texts.length; // Move to next text
+    }
+
+    setTimeout(typeWriter, speed);
+}
+
+window.onload = typeWriter;
+
+
