@@ -17,6 +17,7 @@ body{
     margin: 0px;
     display: flex;
     padding-left: 10px;
+    padding-top: 10px;
     justify-content: space-between;
     align-items: center;
     width: 100%;
@@ -97,7 +98,7 @@ body{
 /* home page left side */
 .homepage-leftside{
     display: flex;
-    width: 60%;
+    width: 65%;
     align-items: center;
     justify-content: center;
     height: 90vh;
@@ -110,7 +111,7 @@ body{
     color: aliceblue;
     font-family: "Quicksand";
     flex-direction: column;
-    margin: 100px;
+    margin: 0;
     padding-left: 0;
 }
 .leftside-content h4{
@@ -204,6 +205,7 @@ body{
 }
 
 /* home page right side area */
+
 .profile-picture-area{
     display: flex;
     width: 50%;
@@ -211,9 +213,8 @@ body{
     justify-content: center;
     height: 100vh;
 }
-.profile-picture-container {
+.image-box {
     position: relative;
-    height: 100vh;
     width: 40%;
     display: flex;
     justify-content: center;
@@ -223,18 +224,54 @@ body{
     height: 500px; 
     border-radius: 50%;
     max-width: 100%;
-    box-shadow:  0 0 10px 10px rgba(255, 255, 255, 0.5);
+    padding: 5px;
+    /* box-shadow:  0 0 10px 10px rgba(255, 255, 255, 0.5); */
+}
+
+.rotating-border {
+    position: absolute;
+    width: 900%;
+    height: 80%;
+    border-radius: 50%;
+    background: conic-gradient(
+        from 0deg,
+        #00fffc,
+        #1f1d1f,
+        #1f1d1f,
+        #00fffc
+    );
+    animation: rotateBorder 5s linear infinite;
+    z-index: 1;
+}
+
+@keyframes rotateBorder {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.image-item{
+    position: relative;
+    width: 95%;
+    height: 95%;
+    border-radius: 50%;
+    overflow: hidden;
+    background: black;
+    z-index: 2;
 }
 
 
-.profile-picture-container img{
-    position: absolute;
+.image-item img{
+    position: relative;
     width: 100%;
     height: 100%;
     border-radius: 50%;
     object-fit: cover;
     max-width: 100%;
-    
+    z-index: 2;
 }
 
 .list li a.active {
