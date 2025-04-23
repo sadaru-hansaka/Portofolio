@@ -22,7 +22,7 @@ body{
     align-items: center;
     width: 100%;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     background: rgba(255, 255, 255, 0.15); /* Semi-transparent background */
     backdrop-filter: blur(10px); /* Blurred glass effect */
     -webkit-backdrop-filter: blur(10px); /* Safari support */
@@ -240,7 +240,7 @@ body{
         #1f1d1f,
         #00fffc
     );
-    animation: rotateBorder 5s linear infinite;
+    animation: rotateBorder 6s linear infinite;
     z-index: 1;
 }
 
@@ -260,7 +260,7 @@ body{
     border-radius: 50%;
     overflow: hidden;
     background: black;
-    z-index: 2;
+    z-index: 1;
 }
 
 
@@ -271,7 +271,7 @@ body{
     border-radius: 50%;
     object-fit: cover;
     max-width: 100%;
-    z-index: 2;
+    z-index: 1;
 }
 
 .list li a.active {

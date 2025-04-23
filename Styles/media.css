@@ -27,7 +27,7 @@
         align-items: center;
         width: 100%;
         position: fixed;
-        z-index: 1;
+        z-index: 2;
     } 
     .close-btn{
         display: block;
@@ -155,7 +155,7 @@
         padding-top: 50px;
         padding-bottom: 150px;
     }
-    .profile-picture-container {
+    .image-box {
         height: auto;
         width: 100%;
         display: flex;
@@ -167,7 +167,7 @@
         max-width: 100%;
     }
 
-    .profile_pic{
+    .image-item{
         width: 100%;
         height: 100%;
         border-radius: 50%;
