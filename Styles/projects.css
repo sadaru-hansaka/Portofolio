@@ -49,7 +49,7 @@
     border: 1px solid rgba(255, 255, 255, 0.3);
     color: #ffffff;
     width: 375px;
-    height: 325px;
+    height: 330px;
 }
 
 .project-card:hover {
@@ -78,9 +78,16 @@
 
 .tech-stack {
     display: flex;
-    gap: 5px;
-    padding: 10px;
+    /* gap: 5px; */
+    /* padding: 5px; */
     font-family: "Quicksand", sans-serif;
     font-size: 0.8rem;
-    color: #007bff;
+    padding-bottom: 20px;
+}
+.tech-stack p{
+    background-color: #ccc;
+    color: #000000;
+    padding: 5px;
+    border-radius: 3px;
+    margin-right: 0;
 }

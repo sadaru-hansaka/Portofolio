@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <title>About me</title>
 </head>
 <body>
@@ -40,21 +41,21 @@
         <div class="row">
             <div class="header-container">
                 <!-- <i class="fa-solid fa-graduation-cap" style="color: #ffffff;"></i> -->
-                <h2 class="edu">Education</h2>
+                <h2 data-aos="fade-up" data-aos-duration="1000" class="edu">Education</h2>
             </div>
             
 
             <div class="education-item">
                 <div class="icon"><i class="fa-solid fa-graduation-cap" style="color: #ffffff;"></i></div>
                 
-                <div class="education-content">
+                <div data-aos="fade-up" data-aos-duration="1000" class="education-content">
                     <h3>Bachelor of Science in Computer Science</h3>
                     <h4>University of Westminster</h4>
                     <p>2024 - Present</p>
                 </div>
             </div>
     
-            <div class="education-item">
+            <div data-aos="fade-up" data-aos-duration="1000" class="education-item">
                 <div class="icon"><i class="fa-solid fa-graduation-cap" style="color: #ffffff;"></i></div>
                 <div class="education-content">
                     <h3>Foundation Certificate in Higher Education</h3>
@@ -65,29 +66,29 @@
         </div>
 
         <section class="core-values">
-            <h2 class="coreValues">Core Values</h2>
+            <h2 data-aos="fade-up" data-aos-duration="1000" class="coreValues">Core Values</h2>
             <div class="values-container">
-                <div class="value-card">
+                <div data-aos="fade-right" data-aos-duration="1000" class="value-card">
                     <img src="./images/bulb.png" alt="Innovation Icon">
                     <h3>Innovation</h3>
                     <p>Constantly seeking new and better solutions to challenges</p>
                 </div>
-                <div class="value-card">
+                <div data-aos="fade-right" data-aos-duration="1000" class="value-card">
                     <img src="./images/hr-group.png" alt="Teamworl Icon">
                     <h3>Teamwork</h3>
                     <p>Collaborating effectively to achieve goals</p>
                 </div>
-                <div class="value-card">
+                <div data-aos="fade-up" data-aos-duration="1000" class="value-card">
                     <img src="./images/dictionary-open.png" alt="Continuous Learning Icon">
                     <h3>Continuous Learning</h3>
                     <p>Always expanding knowledge and skills</p>
                 </div>
-                <div class="value-card">
+                <div data-aos="fade-left" data-aos-duration="1000" class="value-card">
                     <img src="./images/puzzle-pieces.png" alt="Continuous Learning Icon">
                     <h3>Problem Solving</h3>
                     <p>Analyzing and solving complex technical problems effectively</p>
                 </div>
-                <div class="value-card">
+                <div data-aos="fade-left" data-aos-duration="1000" class="value-card">
                     <img src="./images/adaptability (1).png" alt="Continuous Learning Icon">
                     <h3>Adaptability</h3>
                     <p>Quickly learning new languages, frameworks, and technologies</p>
@@ -96,7 +97,7 @@
         </section>
 
         <section class="hobbies">
-            <h2 class="hobby-topic">Interests & Hobbies</h2>
+            <h2 data-aos="fade-down" data-aos-duration="1000" class="hobby-topic">Interests & Hobbies</h2>
             <div class="hobbies-container">
                 <div class="hobby1">
                     <div class="hobby">
@@ -151,5 +152,10 @@
         </div>
     </footer>               
     <!-- end -->
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
