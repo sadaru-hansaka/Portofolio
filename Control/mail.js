@@ -1,31 +1,20 @@
-import {key} from './key.js';
-
-const form = document.querySelector('form');
-const name = document.getElementById('name');
-const mail = document.getElementById('email');
-const messege = document.getElementById('message');
-const subject = document.getElementById('subject');
-
-
-
 function sendEmail() {
-    const msg = `Name : ${name.value}<br> Email : ${mail.value}<br><br> ${messege.value}`
+    const form = document.querySelector("form")
+    const templateParams = {
+        name : document.querySelector("#name").value,
+        email:document.querySelector("#email").value,
+        subject:document.querySelector("#subject").value,
+        message:document.querySelector("#message").value,
+    }
 
-    Email.send({
-        Host : "smtp.elasticemail.com",
-        Username : "hansakas305@gmail.com",
-        Password : key,
-        To : 'hansakas305@gmail.com',
-        From : "hansakas305@gmail.com",
-        Subject : subject.value,
-        Body : msg,
-    }).then(
-      message => alert(message)
-    );
+    emailjs
+        .send("service_wi8lczj","template_ziy9nuq",templateParams)
+        .then(()=> {
+            alert("Email Sent!");
+            form.reset();
+        })
+        .catch(()=>{
+            alert("Email Not Sent!!")
+        });
+
 }
-
-form.addEventListener('submit', function(e){
-    e.preventDefault();
-    sendEmail();
-    this.reset();
-})

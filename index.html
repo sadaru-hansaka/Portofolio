@@ -19,7 +19,16 @@
         <link rel="stylesheet" href="Styles/project-media.css">
         <link rel="stylesheet" href="Styles/footer-main.css">
         <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-
+        <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+        </script>
+        <script type="text/javascript">
+            (function(){
+                emailjs.init({
+                    publicKey: "DSj_mGu9ymQlax1du",
+                });
+            })();
+        </script>
     </head>
         
     <body>
@@ -263,12 +272,13 @@
             <div data-aos="fade-up" class="contact-container">
                 <div class="contact_form">
                     <h1>Contact me</h1>
-                    <form action="" class="form">
-                        <input type="text" id="name" name="name" placeholder="Your Name" class="contact-input" required>
-                        <input type="email" id="email" name="email" placeholder="Your Email" class="contact-input" required>
-                        <input type="text" id="subject" name="Subject" placeholder="Subject" class="contact-input" required>
+                    <form class="form">
+                        <input type="text" id="name" name="name" placeholder="Your Name" class="contact-input" required/>
+                        <input type="email" id="email" name="email" placeholder="Your Email" class="contact-input" required/>
+                        <input type="text" id="subject" name="subject" placeholder="Subject" class="contact-input" required/>
                         <textarea name="message" id="message" placeholder="Your Message" class="text-input" rows="8" required></textarea> 
-                        <input type="submit" value="Send" class="contact-btn"> 
+                        <!-- <input type="submit" value="Send" class="contact-btn">  -->
+                         <button type="button" class="contact-btn" onclick="sendEmail()">Send</button>
                     </form>
                     
                 </div>
@@ -305,8 +315,8 @@
                     </div>
                     
                 </div>
-
             </div>
+            
         </div>
         <footer class="footer">
             <div class="footer-container">
@@ -328,7 +338,7 @@
 
 
         <script src="https://smtpjs.com/v3/smtp.js"></script>
-        <script type="module" src="Control/mail.js"></script>
+        <script type="text/javascript" src="Control/mail.js"></script>
         <script src="Control/script.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
         <script>
